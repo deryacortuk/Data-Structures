@@ -173,7 +173,21 @@ class DoubleLinkedList{
 		}
 	}
 		}
-		
+	
+		~DoubleLinkedList(){
+			
+			Node *next;
+			
+			
+			while(header != NULL){
+				next = header->next;
+			    
+				delete header;
+				header = next;
+			    
+				
+			}	
+		}
 	
 		
 		
